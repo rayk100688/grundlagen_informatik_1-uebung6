@@ -1,0 +1,29 @@
+#___________Aufgabe1____________________________
+def einmaleins (zahl):
+    i=1
+    j=1
+    print ("  |",end="")
+    while i<zahl:
+        print (f" {i:2d}|",end="")
+        i=i+1
+    print (f" {i:2d}|")
+    i=1
+    print ("--+",end="")
+    while i<zahl:
+        print (f"---+",end="")
+        i=i+1
+    print (f"---+")
+    i=1
+    while i<=zahl:
+        print (f"{i:2d}|",end="")
+        while j<zahl:
+            ergebnis=i*j
+            print (f"{ergebnis:3d}|",end="")
+            j=j+1
+        ergebnis=i*j    
+        print (f"{ergebnis:3d}|")    
+        i=i+1
+        j=1
+#Musterlösung enthält eine Variable "zeile" initialisiert mit zeile="" bei jeder Zeilenerzeugung
+#Jede spalte macht zeile=zeile+f"{i*j:3d}"
+#abschluss mit print(zeile)
