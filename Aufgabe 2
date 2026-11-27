@@ -1,0 +1,40 @@
+#___________Aufgabe2____________________________
+def multipledreiecke_v1 (hoehe):
+    i=1
+    zeile=""
+    while i<=hoehe:
+        zeile=zeile+f"{i}"
+        print (zeile)
+        i=i+1
+def multipledreiecke_v2 (hoehe):
+    i=1
+    zeile=""
+    while i<=hoehe:
+        j=1
+        mitte=""
+        while j<=(i*2-1):
+            mitte=mitte+f"{j}"
+            j=j+1
+        zeile=" "*(hoehe-i)+mitte+" "*(hoehe-i)
+        print (zeile)
+        i=i+1
+def multipledreiecke_v3 (hoehe):
+    i=1
+    zeile=""
+    while i<=hoehe:
+        j=1
+        k=1
+        mitte1=""
+        while j<=i:
+            mitte1=mitte1+f"{j}"
+            k=j
+            j=j+1
+        mitte2=""
+        j=1
+        while k>i-2:
+            mitte2=mitte2+f"{j}"
+            j=j+1
+            k=k-1
+        zeile=" "*(hoehe-i)+mitte1+mitte2
+        print (zeile)
+        i=i+1
